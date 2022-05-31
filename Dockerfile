@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3.9-alpine
 
 RUN mkdir /app
 WORKDIR /app
@@ -31,6 +31,7 @@ RUN apk update && \
      openssl-dev \
      cargo
 
+RUN pip install --upgrade pip
 RUN pip install poetry
 
 COPY pyproject.toml poetry.lock ./

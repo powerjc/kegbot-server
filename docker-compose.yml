@@ -15,7 +15,7 @@ services:
       KEGBOT_REDIS_URL: redis://redis:6379/0
       KEGBOT_DATABASE_URL: mysql://kegbot_dev:changeme@mysql/kegbot_dev
       KEGBOT_SETUP_ENABLED: "true"
-      KEGBOT_DEBUG: "true"
+      KEGBOT_DEBUG: "false"
 
   workers:
     image: kegbot-server
@@ -30,7 +30,7 @@ services:
       KEGBOT_REDIS_URL: redis://redis:6379/0
       KEGBOT_DATABASE_URL: mysql://kegbot_dev:changeme@mysql/kegbot_dev
       KEGBOT_SETUP_ENABLED: "true"
-      KEGBOT_DEBUG: "true"
+      KEGBOT_DEBUG: "false"
 
   mysql:
     image: mysql:latest
